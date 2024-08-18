@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calculateTips()">Calculate tips</button>
+    <script>
+        function calculateTips(){
+            let sum = parseFloat(prompt("Write a sum"));
+            let tip = (sum>=50 && sum<=300) ? sum*0.15 : sum*0.2;
+            let total = sum + tip;
+            console.log("Sum is  " + sum + " Tip amount is " + tip + " Total amount is " + total);
+        }
+    </script>
+</body>
+</html>
